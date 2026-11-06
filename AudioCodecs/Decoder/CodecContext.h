@@ -2,7 +2,7 @@
 #include <API/createDecoder.h>
 #include "ffIncludes.h"
 #include <Downmix/PcmConverter.h>
-#include "../../../../CGML/ComLightLib/comLightClient.h"
+#include "../../ComLightLib/comLightClient.h"
 #include <Utils/iLoggerSetup.h>
 
 struct DecoderInfo

@@ -154,6 +154,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComLightLib\ComLightLib.vcxproj">
+      <Project>{52f486e7-830c-45d8-be47-e76b5aab2772}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\FFmpegStatic\FFmpegStatic.vcxproj">
       <Project>{46d014a2-248b-4fa9-b614-b817cbb09e19}</Project>
     </ProjectReference>

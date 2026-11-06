@@ -84,3 +84,5 @@ Run the `config-windows.cmd` script.
 Edit `NasmConfig.props` in the same folder; inside the `<NasmPath>` element, specify path to NASM installation folder.
 
 Double click `AudioCodecs.slnx` and build AudioCodecs project.
+
+If compiled successfully, the output file should be `x64/$(Configuration)/AudioCodecs.amd64.dll`

@@ -1,6 +1,6 @@
 #pragma once
 #include <API/iSampleDecoder.h>
-#include "../../../CGML/ComLightLib/comLightServer.h"
+#include "../../ComLightLib/comLightServer.h"
 #include "CodecContext.h"
 
 class DecoderObj: public ComLight::ObjectRoot<AudioCodecs::iDecodedStream>

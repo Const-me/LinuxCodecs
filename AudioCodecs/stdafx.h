@@ -24,4 +24,4 @@ namespace
 }
 #endif
 
-#include "../../../CGML/ComLightLib/comLightCommon.h"
+#include "../ComLightLib/comLightCommon.h"
