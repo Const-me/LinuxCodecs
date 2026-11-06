@@ -1,0 +1,12 @@
+LIBRARY
+EXPORTS createSampleDecoder
+
+EXPORTS soxr_quality_spec
+EXPORTS soxr_create
+EXPORTS soxr_delete
+EXPORTS soxr_set_input_fn
+EXPORTS soxr_output
+EXPORTS soxr_clear
+EXPORTS soxr_error
+EXPORTS soxr_engine
+EXPORTS soxr_oneshot

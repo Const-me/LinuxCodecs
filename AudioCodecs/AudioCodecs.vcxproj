@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dadf9f16-3f3f-4b2b-b7bd-72fa04d8bd45}</ProjectGuid>
+    <RootNamespace>AudioCodecs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>AudioCodecs.amd64</TargetName>
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\FFmpegStatic\config\windows\;$(ProjectDir)..\FFmpegStatic\FFmpeg\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\FFmpegStatic\config\windows\;$(ProjectDir)..\FFmpegStatic\FFmpeg\;$(IncludePath)</IncludePath>
+    <TargetName>AudioCodecs.amd64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;AUDIOCODECS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>AudioCodecs.def</ModuleDefinitionFile>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;AUDIOCODECS_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ModuleDefinitionFile>AudioCodecs.def</ModuleDefinitionFile>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="API\createDecoder.h" />
+    <ClInclude Include="API\eAudioCodec.h" />
+    <ClInclude Include="API\eLogLevel.h" />
+    <ClInclude Include="API\iSampleDecoder.h" />
+    <ClInclude Include="API\sPcmDesc.h" />
+    <ClInclude Include="Decoder\applyConfig.h" />
+    <ClInclude Include="Downmix\AVX\Mono5.h" />
+    <ClInclude Include="Downmix\AVX\Stereo3.h" />
+    <ClInclude Include="Downmix\AVX\Stereo4.h" />
+    <ClInclude Include="Downmix\AVX\Stereo5.h" />
+    <ClInclude Include="Downmix\ChannelLayout.h" />
+    <ClInclude Include="Downmix\AVX\avxUtils.h" />
+    <ClInclude Include="Decoder\CodecContext.h" />
+    <ClInclude Include="Decoder\ffIncludes.h" />
+    <ClInclude Include="Downmix\AVX\FloatStereoConverter.h" />
+    <ClInclude Include="Downmix\AVX\Mono3.h" />
+    <ClInclude Include="Downmix\AVX\Mono4.h" />
+    <ClInclude Include="Downmix\AVX\MonoFromStereo.h" />
+    <ClInclude Include="Downmix\AVX\MultiInput.h" />
+    <ClInclude Include="Downmix\AVX\StereoInput.h" />
+    <ClInclude Include="Downmix\AVX\StereoInterleave.h" />
+    <ClInclude Include="Downmix\createConverters.h" />
+    <ClInclude Include="Downmix\AVX\FloatMonoConverter.h" />
+    <ClInclude Include="Downmix\PcmConverter.h" />
+    <ClInclude Include="Decoder\DecoderObj.h" />
+    <ClInclude Include="Downmix\FloatBasic.h" />
+    <ClInclude Include="Downmix\sDownmixWeights.h" />
+    <ClInclude Include="Utils\loggerUtils.h" />
+    <ClInclude Include="Utils\iLoggerSetup.h" />
+    <ClInclude Include="Utils\logger.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Decoder\applyConfig.cpp" />
+    <ClCompile Include="Decoder\CodecContext.misc.cpp" />
+    <ClCompile Include="Downmix\ChannelLayout.cpp" />
+    <ClCompile Include="Downmix\AVX\avxUtils.cpp" />
+    <ClCompile Include="Decoder\CodecContext.cpp" />
+    <ClCompile Include="Decoder\CodecContext.init.cpp" />
+    <ClCompile Include="Decoder\createDecoder.cpp" />
+    <ClCompile Include="Decoder\ffIncludes.cpp" />
+    <ClCompile Include="Downmix\createConverters.cpp" />
+    <ClCompile Include="Downmix\downmixMono.cpp" />
+    <ClCompile Include="Downmix\downmixStereo.cpp" />
+    <ClCompile Include="Downmix\FloatConverters.cpp" />
+    <ClCompile Include="Downmix\PcmConverter.cpp" />
+    <ClCompile Include="Decoder\DecoderObj.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Downmix\FloatBasic.cpp" />
+    <ClCompile Include="Utils\loggerUtils.cpp" />
+    <ClCompile Include="Utils\logger.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FFmpegStatic\FFmpegStatic.vcxproj">
+      <Project>{46d014a2-248b-4fa9-b614-b817cbb09e19}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ResamplerStatic\ResamplerStatic.vcxproj">
+      <Project>{d24f4f19-9d67-496d-bbdc-ef513720511c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AudioCodecs.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

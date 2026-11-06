@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22)
+project(Codecs)
+add_subdirectory(FFmpegStatic)
+add_subdirectory(ResamplerStatic)
+add_subdirectory(AudioCodecs)

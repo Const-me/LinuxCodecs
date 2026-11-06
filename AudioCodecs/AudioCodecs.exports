@@ -1,0 +1,19 @@
+{
+	global:
+	# Factory function to create FFmpeg-based sample decoders
+		createSampleDecoder;
+
+	# Public API of the linked SoX resampler library
+		soxr_quality_spec;
+		soxr_create;
+		soxr_delete;
+		soxr_set_input_fn;
+		soxr_output;
+		soxr_clear;
+		soxr_error;
+		soxr_engine;
+		soxr_oneshot;
+
+	# Don't export any other stuff from this DLL
+	local: *;
+};

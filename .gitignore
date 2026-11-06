@@ -1,0 +1,7 @@
+.vs/
+**/obj/
+**/bin/
+**/x64/
+*.user
+**/launchSettings.json
+FFmpegStatic/config/

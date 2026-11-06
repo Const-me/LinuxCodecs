@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="../../CGML/ComLightLib/ComLightLib.vcxproj" Id="52f486e7-830c-45d8-be47-e76b5aab2772" />
+  <Project Path="AudioCodecs/AudioCodecs.vcxproj" Id="dadf9f16-3f3f-4b2b-b7bd-72fa04d8bd45" />
+  <Project Path="FFmpegStatic/FFmpegStatic.vcxproj" Id="46d014a2-248b-4fa9-b614-b817cbb09e19" />
+</Solution>

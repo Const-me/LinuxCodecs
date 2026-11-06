@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FFmpeg\libavcodec\aac.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aacps.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aacps_tablegen.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aacsbr.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aactab.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aac\aacdec.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aac\aacdec_ac.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aac\aacdec_lpd.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aac\aacdec_tab.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aac\aacdec_usac.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aac\aacdec_usac_mps212.h" />
+    <ClInclude Include="FFmpeg\libavcodec\aac_ac3_parser.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3dec.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3dec_data.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3defs.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3dsp.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3tab.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3_channel_layout_tab.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3_parser.h" />
+    <ClInclude Include="FFmpeg\libavcodec\ac3_parser_internal.h" />
+    <ClInclude Include="FFmpeg\libavcodec\acelp_filters.h" />
+    <ClInclude Include="FFmpeg\libavcodec\acelp_vectors.h" />
+    <ClInclude Include="FFmpeg\libavcodec\adts_header.h" />
+    <ClInclude Include="FFmpeg\libavcodec\adts_parser.h" />
+    <ClInclude Include="FFmpeg\libavcodec\avcodec.h" />
+    <ClInclude Include="FFmpeg\libavcodec\bitstream.h" />
+    <ClInclude Include="FFmpeg\libavcodec\bsf.h" />
+    <ClInclude Include="FFmpeg\libavcodec\bsf_internal.h" />
+    <ClInclude Include="FFmpeg\libavcodec\bswapdsp.h" />
+    <ClInclude Include="FFmpeg\libavcodec\cbrt_data.h" />
+    <ClInclude Include="FFmpeg\libavcodec\celp_filters.h" />
+    <ClInclude Include="FFmpeg\libavcodec\codec_desc.h" />
+    <ClInclude Include="FFmpeg\libavcodec\codec_par.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dca.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dcadata.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dcadct.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dcadec.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dcadsp.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dcahuff.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dca_core.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dca_exss.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dca_lbr.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dca_sample_rate_tab.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dca_syncwords.h" />
+    <ClInclude Include="FFmpeg\libavcodec\dca_xll.h" />
+    <ClInclude Include="FFmpeg\libavcodec\decode.h" />
+    <ClInclude Include="FFmpeg\libavcodec\eac3_data.h" />
+    <ClInclude Include="FFmpeg\libavcodec\fmtconvert.h" />
+    <ClInclude Include="FFmpeg\libavcodec\kbdwin.h" />
+    <ClInclude Include="FFmpeg\libavcodec\lossless_audiodsp.h" />
+    <ClInclude Include="FFmpeg\libavcodec\lsp.h" />
+    <ClInclude Include="FFmpeg\libavcodec\mpeg4audio.h" />
+    <ClInclude Include="FFmpeg\libavcodec\mpeg4audio_sample_rates.h" />
+    <ClInclude Include="FFmpeg\libavcodec\packet.h" />
+    <ClInclude Include="FFmpeg\libavcodec\packet_internal.h" />
+    <ClInclude Include="FFmpeg\libavcodec\parser.h" />
+    <ClInclude Include="FFmpeg\libavcodec\parser_internal.h" />
+    <ClInclude Include="FFmpeg\libavcodec\profiles.h" />
+    <ClInclude Include="FFmpeg\libavcodec\sbrdsp.h" />
+    <ClInclude Include="FFmpeg\libavcodec\sinewin.h" />
+    <ClInclude Include="FFmpeg\libavcodec\synth_filter.h" />
+    <ClInclude Include="FFmpeg\libavcodec\threadprogress.h" />
+    <ClInclude Include="FFmpeg\libavcodec\vlc.h" />
+    <ClInclude Include="FFmpeg\libavcodec\wma.h" />
+    <ClInclude Include="FFmpeg\libavcodec\wmadata.h" />
+    <ClInclude Include="FFmpeg\libavcodec\wmaprodata.h" />
+    <ClInclude Include="FFmpeg\libavcodec\wmavoice_data.h" />
+    <ClInclude Include="FFmpeg\libavcodec\wma_common.h" />
+    <ClInclude Include="FFmpeg\libavcodec\wma_freqs.h" />
+    <ClInclude Include="FFmpeg\libavcodec\x86\constants.h" />
+    <ClInclude Include="FFmpeg\libavutil\audio_fifo.h" />
+    <ClInclude Include="FFmpeg\libavutil\avstring.h" />
+    <ClInclude Include="FFmpeg\libavutil\bprint.h" />
+    <ClInclude Include="FFmpeg\libavutil\buffer.h" />
+    <ClInclude Include="FFmpeg\libavutil\buffer_internal.h" />
+    <ClInclude Include="FFmpeg\libavutil\channel_layout.h" />
+    <ClInclude Include="FFmpeg\libavutil\container_fifo.h" />
+    <ClInclude Include="FFmpeg\libavutil\cpu.h" />
+    <ClInclude Include="FFmpeg\libavutil\cpu_internal.h" />
+    <ClInclude Include="FFmpeg\libavutil\crc.h" />
+    <ClInclude Include="FFmpeg\libavutil\dict.h" />
+    <ClInclude Include="FFmpeg\libavutil\downmix_info.h" />
+    <ClInclude Include="FFmpeg\libavutil\error.h" />
+    <ClInclude Include="FFmpeg\libavutil\fifo.h" />
+    <ClInclude Include="FFmpeg\libavutil\fixed_dsp.h" />
+    <ClInclude Include="FFmpeg\libavutil\float_dsp.h" />
+    <ClInclude Include="FFmpeg\libavutil\frame.h" />
+    <ClInclude Include="FFmpeg\libavutil\internal.h" />
+    <ClInclude Include="FFmpeg\libavutil\lfg.h" />
+    <ClInclude Include="FFmpeg\libavutil\mathematics.h" />
+    <ClInclude Include="FFmpeg\libavutil\md5.h" />
+    <ClInclude Include="FFmpeg\libavutil\mem.h" />
+    <ClInclude Include="FFmpeg\libavutil\opt.h" />
+    <ClInclude Include="FFmpeg\libavutil\rational.h" />
+    <ClInclude Include="FFmpeg\libavutil\refstruct.h" />
+    <ClInclude Include="FFmpeg\libavutil\reverse.h" />
+    <ClInclude Include="FFmpeg\libavutil\samplefmt.h" />
+    <ClInclude Include="FFmpeg\libavutil\side_data.h" />
+    <ClInclude Include="FFmpeg\libavutil\timecode_internal.h" />
+    <ClInclude Include="FFmpeg\libavutil\tx.h" />
+    <ClInclude Include="FFmpeg\libavutil\tx_priv.h" />
+    <ClInclude Include="FFmpeg\libavutil\x86\cpu.h" />
+    <ClInclude Include="libavutil\avconfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FFmpeg\libavcodec\aacpsdsp_float.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aacps_common.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aacps_float.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aacps_tablegen.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aacsbr.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aactab.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aac\aacdec.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aac\aacdec_ac.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aac\aacdec_float.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aac\aacdec_lpd.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aac\aacdec_tab.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aac\aacdec_usac.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aac\aacdec_usac_mps212.c" />
+    <ClCompile Include="FFmpeg\libavcodec\aac_ac3_parser.c" />
+    <ClCompile Include="FFmpeg\libavcodec\ac3.c" />
+    <ClCompile Include="FFmpeg\libavcodec\ac3dec_data.c" />
+    <ClCompile Include="FFmpeg\libavcodec\ac3dec_float.c" />
+    <ClCompile Include="FFmpeg\libavcodec\ac3dsp.c" />
+    <ClCompile Include="FFmpeg\libavcodec\ac3tab.c" />
+    <ClCompile Include="FFmpeg\libavcodec\ac3_channel_layout_tab.c" />
+    <ClCompile Include="FFmpeg\libavcodec\ac3_parser.c" />
+    <ClCompile Include="FFmpeg\libavcodec\acelp_filters.c" />
+    <ClCompile Include="FFmpeg\libavcodec\acelp_vectors.c" />
+    <ClCompile Include="FFmpeg\libavcodec\adts_header.c" />
+    <ClCompile Include="FFmpeg\libavcodec\adts_parser.c" />
+    <ClCompile Include="FFmpeg\libavcodec\allcodecs.c" />
+    <ClCompile Include="FFmpeg\libavcodec\avcodec.c" />
+    <ClCompile Include="FFmpeg\libavcodec\bitstream.c" />
+    <ClCompile Include="FFmpeg\libavcodec\bitstream_filters.c" />
+    <ClCompile Include="FFmpeg\libavcodec\bsf.c" />
+    <ClCompile Include="FFmpeg\libavcodec\bswapdsp.c" />
+    <ClCompile Include="FFmpeg\libavcodec\cbrt_data.c" />
+    <ClCompile Include="FFmpeg\libavcodec\cbrt_tablegen_common.c" />
+    <ClCompile Include="FFmpeg\libavcodec\celp_filters.c" />
+    <ClCompile Include="FFmpeg\libavcodec\codec_desc.c" />
+    <ClCompile Include="FFmpeg\libavcodec\codec_par.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dca.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dcadata.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dcadct.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dcadec.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dcadsp.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dcahuff.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dca_core.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dca_exss.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dca_lbr.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dca_parser.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dca_sample_rate_tab.c" />
+    <ClCompile Include="FFmpeg\libavcodec\dca_xll.c" />
+    <ClCompile Include="FFmpeg\libavcodec\decode.c" />
+    <ClCompile Include="FFmpeg\libavcodec\eac3_data.c" />
+    <ClCompile Include="FFmpeg\libavcodec\fmtconvert.c" />
+    <ClCompile Include="FFmpeg\libavcodec\kbdwin.c" />
+    <ClCompile Include="FFmpeg\libavcodec\lossless_audiodsp.c" />
+    <ClCompile Include="FFmpeg\libavcodec\lsp.c" />
+    <ClCompile Include="FFmpeg\libavcodec\mathtables.c" />
+    <ClCompile Include="FFmpeg\libavcodec\mpeg4audio.c" />
+    <ClCompile Include="FFmpeg\libavcodec\mpeg4audio_sample_rates.c" />
+    <ClCompile Include="FFmpeg\libavcodec\options.c" />
+    <ClCompile Include="FFmpeg\libavcodec\packet.c" />
+    <ClCompile Include="FFmpeg\libavcodec\parser.c" />
+    <ClCompile Include="FFmpeg\libavcodec\parsers.c" />
+    <ClCompile Include="FFmpeg\libavcodec\profiles.c" />
+    <ClCompile Include="FFmpeg\libavcodec\sbrdsp.c" />
+    <ClCompile Include="FFmpeg\libavcodec\sinewin.c" />
+    <ClCompile Include="FFmpeg\libavcodec\synth_filter.c" />
+    <ClCompile Include="FFmpeg\libavcodec\threadprogress.c" />
+    <ClCompile Include="FFmpeg\libavcodec\utils.c" />
+    <ClCompile Include="FFmpeg\libavcodec\vlc.c" />
+    <ClCompile Include="FFmpeg\libavcodec\wma.c" />
+    <ClCompile Include="FFmpeg\libavcodec\wmadec.c" />
+    <ClCompile Include="FFmpeg\libavcodec\wmalosslessdec.c" />
+    <ClCompile Include="FFmpeg\libavcodec\wmaprodec.c" />
+    <ClCompile Include="FFmpeg\libavcodec\wmavoice.c" />
+    <ClCompile Include="FFmpeg\libavcodec\wma_common.c" />
+    <ClCompile Include="FFmpeg\libavcodec\wma_freqs.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\aacpsdsp_init.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\ac3dsp_init.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\bswapdsp_init.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\constants.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\dcadsp_init.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\fmtconvert_init.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\lossless_audiodsp_init.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\sbrdsp_init.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\synth_filter_init.c" />
+    <ClCompile Include="FFmpeg\libavutil\audio_fifo.c" />
+    <ClCompile Include="FFmpeg\libavutil\avsscanf.c" />
+    <ClCompile Include="FFmpeg\libavutil\avstring.c" />
+    <ClCompile Include="FFmpeg\libavutil\bprint.c" />
+    <ClCompile Include="FFmpeg\libavutil\buffer.c" />
+    <ClCompile Include="FFmpeg\libavutil\channel_layout.c" />
+    <ClCompile Include="FFmpeg\libavutil\container_fifo.c" />
+    <ClCompile Include="FFmpeg\libavutil\cpu.c" />
+    <ClCompile Include="FFmpeg\libavutil\crc.c" />
+    <ClCompile Include="FFmpeg\libavutil\dict.c" />
+    <ClCompile Include="FFmpeg\libavutil\downmix_info.c" />
+    <ClCompile Include="FFmpeg\libavutil\error.c" />
+    <ClCompile Include="FFmpeg\libavutil\fifo.c" />
+    <ClCompile Include="FFmpeg\libavutil\fixed_dsp.c" />
+    <ClCompile Include="FFmpeg\libavutil\float_dsp.c" />
+    <ClCompile Include="FFmpeg\libavutil\float_scalarproduct.c" />
+    <ClCompile Include="FFmpeg\libavutil\frame.c" />
+    <ClCompile Include="FFmpeg\libavutil\lfg.c" />
+    <ClCompile Include="FFmpeg\libavutil\log2_tab.c" />
+    <ClCompile Include="FFmpeg\libavutil\mathematics.c" />
+    <ClCompile Include="FFmpeg\libavutil\md5.c" />
+    <ClCompile Include="FFmpeg\libavutil\mem.c" />
+    <ClCompile Include="FFmpeg\libavutil\opt.c" />
+    <ClCompile Include="FFmpeg\libavutil\rational.c" />
+    <ClCompile Include="FFmpeg\libavutil\refstruct.c" />
+    <ClCompile Include="FFmpeg\libavutil\reverse.c" />
+    <ClCompile Include="FFmpeg\libavutil\samplefmt.c" />
+    <ClCompile Include="FFmpeg\libavutil\side_data.c" />
+    <ClCompile Include="FFmpeg\libavutil\timecode_internal.c" />
+    <ClCompile Include="FFmpeg\libavutil\tx.c" />
+    <ClCompile Include="FFmpeg\libavutil\tx_double.c" />
+    <ClCompile Include="FFmpeg\libavutil\tx_float.c" />
+    <ClCompile Include="FFmpeg\libavutil\tx_int32.c" />
+    <ClCompile Include="FFmpeg\libavutil\utils.c" />
+    <ClCompile Include="FFmpeg\libavutil\x86\cpu.c" />
+    <ClCompile Include="FFmpeg\libavutil\x86\fixed_dsp_init.c" />
+    <ClCompile Include="FFmpeg\libavutil\x86\float_dsp_init.c" />
+    <ClCompile Include="FFmpeg\libavutil\x86\tx_float_init.c" />
+    <ClCompile Include="Patches\codec-get_buffer.c" />
+    <ClCompile Include="Shims\encode.c" />
+    <ClCompile Include="Shims\eval.c" />
+    <ClCompile Include="Shims\exif.c" />
+    <ClCompile Include="Shims\hwcontext.c" />
+    <ClCompile Include="Shims\imgutils.c" />
+    <ClCompile Include="Shims\logging.c" />
+    <ClCompile Include="Shims\mastering_display_metadata.c" />
+    <ClCompile Include="Shims\parseutils.c" />
+    <ClCompile Include="Shims\pixdesc.c" />
+    <ClCompile Include="Shims\threads.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <NASM Include="FFmpeg\libavcodec\x86\aacpsdsp.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\ac3dsp.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\ac3dsp_downmix.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\bswapdsp.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\dcadsp.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\fmtconvert.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\lossless_audiodsp.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\sbrdsp.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\synth_filter.asm" />
+    <NASM Include="FFmpeg\libavutil\x86\cpuid.asm" />
+    <NASM Include="FFmpeg\libavutil\x86\crc.asm" />
+    <NASM Include="FFmpeg\libavutil\x86\emms.asm" />
+    <NASM Include="FFmpeg\libavutil\x86\fixed_dsp.asm" />
+    <NASM Include="FFmpeg\libavutil\x86\float_dsp.asm" />
+    <NASM Include="FFmpeg\libavutil\x86\tx_float.asm" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{46d014a2-248b-4fa9-b614-b817cbb09e19}</ProjectGuid>
+    <RootNamespace>FFmpegStatic</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="NasmConfig.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)config\windows\;$(ProjectDir)FFmpeg\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)config\windows\;$(ProjectDir)FFmpeg\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_AV_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalOptions>/experimental:c11atomics %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4018;4146;4244;4267;4305;4334;4554;4703</DisableSpecificWarnings>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+    <NASM>
+      <Outputs>$(IntDir)%(RelativeDir)%(FileName).obj</Outputs>
+      <IncludePaths>$(ProjectDir)FFmpeg;$(ProjectDir)FFmpeg\libavutil\x86</IncludePaths>
+      <PreIncludeFiles>$(ProjectDir)config\windows\config.asm;%(PreIncludeFiles)</PreIncludeFiles>
+      <MaxProcesses>8</MaxProcesses>
+    </NASM>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_AV_CONFIG_H;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalOptions>/experimental:c11atomics %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4018;4146;4244;4267;4305;4334;4554;4703</DisableSpecificWarnings>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+    <NASM>
+      <Outputs>$(IntDir)%(RelativeDir)%(FileName).obj</Outputs>
+      <IncludePaths>$(ProjectDir)FFmpeg;$(ProjectDir)FFmpeg\libavutil\x86</IncludePaths>
+      <PreIncludeFiles>$(ProjectDir)config\windows\config.asm;%(PreIncludeFiles)</PreIncludeFiles>
+      <MaxProcesses>8</MaxProcesses>
+    </NASM>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\nasm.targets" />
+  </ImportGroup>
+</Project>
