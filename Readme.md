@@ -2,12 +2,13 @@
 
 ## Introduction
 
-This repository contains 4 projects.
+This repository contains 5 projects.
 
 * `MakeCMake` is a simple .NET 10 console application which converts `.vcxproj` files into a source file list for CMake.
+* `ComLightLib` is mostly header only C++ static library implementing cross-platform [IUnknown](https://en.wikipedia.org/wiki/IUnknown)-based ABI.
 * `FFmpegStatic` compiles a subset of [FFmpeg](https://ffmpeg.org/) into a static library.
 * `ResamplerStatic` compiles [SoX Resampler library](https://sourceforge.net/projects/soxr/) into a static library.
-* `AudioCodecs` links both static libraries into a single DLL.
+* `AudioCodecs` links the static libraries into a single DLL.
 For FFmpeg, the DLL implements a sane object-oriented API based on IUnknown interfaces.
 The resampler’s public API was already good, so the DLL just exports functions implemented in the static library.
 
@@ -25,11 +26,11 @@ This project is not affiliated with or endorsed by FFmpeg or the SoX projects.
 ## Motivation
 
 I needed to decode audio files in a desktop Linux software.
-For some of the codecs like Mp3 and Vorbis, there’re multiple good quality implementations easy to integrate.
-However, I also wanted to support AAC, DTS, AC3, and WMA.
-For them, seems [FFmpeg](https://ffmpeg.org/) is the only good option available.
+For some of the audio codecs like Mp3 and Vorbis, there’re multiple good quality implementations easy to integrate.
+However, I also wanted to support AAC, DTS, AC3, and WMA codecs.
+For them, it seems [FFmpeg](https://ffmpeg.org/) is the only good option available.
 
-I didn’t want to parse any containers in C++; this DLL only includes a subset of libavcodec library.
+I didn’t want to parse containers in unmanaged C++; this DLL only includes a subset of libavcodec library.
 
 Additionally, the DLL includes SoX Resampler which uses same LGPL 2.1 license as FFMpeg.
 

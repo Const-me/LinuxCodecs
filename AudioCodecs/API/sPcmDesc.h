@@ -2,6 +2,7 @@
 
 namespace AudioCodecs
 {
+	// Output sample format of the library
 	enum struct eSampleFormat: uint8_t
 	{
 		// int16 PCM audio

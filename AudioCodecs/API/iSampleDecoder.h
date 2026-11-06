@@ -14,8 +14,8 @@ namespace AudioCodecs
 		int length = 0;
 	};
 
-	// C# implemented callback interface to pull compressed audio from containers
-	// It assumes framing is solved by the container
+	// C# implemented callback interface to pull compressed audio from containers.
+	// It assumes framing is solved by the container.
 	struct DECLSPEC_NOVTABLE iSampleSource: public ComLight::IUnknown
 	{
 		DEFINE_INTERFACE_ID( "433e59c9-7b9e-4702-9ef8-031573637c30" );
@@ -39,9 +39,9 @@ namespace AudioCodecs
 	{
 		DEFINE_INTERFACE_ID( "53efbce8-63f7-49d3-b8bd-f03a54ab7d7e" );
 
-		// Pull decoded PCM audio.
-		// The integers expressed in samples per channel: requesting 10 samples for fp32 stereo needs a buffer of at least 80 bytes
-		// The implementations should not assume any particular granularity; they must deliver the exact count, unless the stream has ended or things failed.
+		// Pull decoded PCM audio, interleaving the channels.
+		// The implementation should not assume any particular granularity; it must deliver the exact count, unless the stream has ended or things failed.
+		// Both integers are expressed in samples per channel, so requesting 10 samples for fp32 stereo needs a buffer of at least 80 bytes.
 		virtual HRESULT COMLIGHTCALL readSamples( uint8_t* rdi, int requested, int& delivered ) noexcept = 0;
 
 		// Fetch stream metadata
