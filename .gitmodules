@@ -1,0 +1,6 @@
+[submodule "ResamplerStatic/soxr"]
+	path = ResamplerStatic/soxr
+	url = https://github.com/chirlu/soxr.git
+[submodule "FFmpegStatic/FFmpeg"]
+	path = FFmpegStatic/FFmpeg
+	url = https://github.com/FFmpeg/FFmpeg.git
