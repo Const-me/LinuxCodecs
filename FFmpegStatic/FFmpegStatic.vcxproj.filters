@@ -105,6 +105,18 @@
     <ClInclude Include="FFmpeg\libavcodec\bitstream.h" />
     <ClInclude Include="FFmpeg\libavcodec\lsp.h" />
     <ClInclude Include="FFmpeg\libavcodec\lossless_audiodsp.h" />
+    <ClInclude Include="FFmpeg\libavcodec\opus\celt.h" />
+    <ClInclude Include="FFmpeg\libavcodec\opus\rc.h" />
+    <ClInclude Include="FFmpeg\libavcodec\opus\silk.h" />
+    <ClInclude Include="FFmpeg\libavcodec\opus\tab.h" />
+    <ClInclude Include="FFmpeg\libavcodec\opus\dsp.h" />
+    <ClInclude Include="FFmpeg\libavcodec\opus\pvq.h" />
+    <ClInclude Include="FFmpeg\libavcodec\opus\opus.h" />
+    <ClInclude Include="FFmpeg\libavcodec\opus\parse.h" />
+    <ClInclude Include="FFmpeg\libavcodec\vorbis_data.h" />
+    <ClInclude Include="FFmpeg\libswresample\swresample.h" />
+    <ClInclude Include="FFmpeg\libswresample\audioconvert.h" />
+    <ClInclude Include="FFmpeg\libswresample\resample.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FFmpeg\libavcodec\ac3dec_float.c" />
@@ -240,6 +252,28 @@
     <ClCompile Include="FFmpeg\libavcodec\x86\lossless_audiodsp_init.c" />
     <ClCompile Include="FFmpeg\libavcodec\lsp.c" />
     <ClCompile Include="FFmpeg\libavcodec\lossless_audiodsp.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\dec.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\dec_celt.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\celt.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\rc.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\silk.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\tab.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\dsp.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\pvq.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\parse.c" />
+    <ClCompile Include="FFmpeg\libavcodec\x86\opusdsp_init.c" />
+    <ClCompile Include="FFmpeg\libavcodec\vorbis_data.c" />
+    <ClCompile Include="FFmpeg\libavcodec\opus\frame_duration_tab.c" />
+    <ClCompile Include="FFmpeg\libswresample\options.c" />
+    <ClCompile Include="FFmpeg\libswresample\swresample.c" />
+    <ClCompile Include="FFmpeg\libswresample\audioconvert.c" />
+    <ClCompile Include="FFmpeg\libswresample\dither.c" />
+    <ClCompile Include="FFmpeg\libswresample\rematrix.c" />
+    <ClCompile Include="FFmpeg\libswresample\x86\rematrix_init.c" />
+    <ClCompile Include="FFmpeg\libswresample\x86\audio_convert_init.c" />
+    <ClCompile Include="FFmpeg\libswresample\resample.c" />
+    <ClCompile Include="FFmpeg\libswresample\resample_dsp.c" />
+    <ClCompile Include="FFmpeg\libswresample\x86\resample_init.c" />
   </ItemGroup>
   <ItemGroup>
     <NASM Include="FFmpeg\libavutil\x86\float_dsp.asm" />
@@ -257,5 +291,9 @@
     <NASM Include="FFmpeg\libavutil\x86\tx_float.asm" />
     <NASM Include="FFmpeg\libavutil\x86\crc.asm" />
     <NASM Include="FFmpeg\libavcodec\x86\lossless_audiodsp.asm" />
+    <NASM Include="FFmpeg\libavcodec\x86\opusdsp.asm" />
+    <NASM Include="FFmpeg\libswresample\x86\rematrix.asm" />
+    <NASM Include="FFmpeg\libswresample\x86\audio_convert.asm" />
+    <NASM Include="FFmpeg\libswresample\x86\resample.asm" />
   </ItemGroup>
 </Project>

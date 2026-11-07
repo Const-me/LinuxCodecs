@@ -2,7 +2,7 @@
 mkdir -p config/linux
 cd config/linux
 ../../FFmpeg/configure --disable-everything \
-  --enable-decoder=aac,ac3,dca,eac3,wmav1,wmav2,wmavoice,wmalossless,wmapro \
+  --enable-decoder=aac,ac3,dca,eac3,wmav1,wmav2,wmavoice,wmalossless,wmapro,opus \
   --disable-autodetect --disable-programs --disable-doc \
   --disable-avformat --disable-avfilter --disable-avdevice --disable-swscale \
   --disable-network --disable-debug --disable-stripping \

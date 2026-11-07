@@ -13,6 +13,7 @@ namespace AudioCodecs
 		Wma2,
 		WmaVoice,
 		WmaLossless,
-		WmaPro
+		WmaPro,
+		Opus,
 	};
 }

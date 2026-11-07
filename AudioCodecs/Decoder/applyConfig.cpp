@@ -98,6 +98,7 @@ HRESULT applyConfig( AVCodecContext* ctx, const sDecoderInit& decInit ) noexcept
 	switch( decInit.codec )
 	{
 	case eAudioCodec::AAC:
+	case eAudioCodec::Opus:
 		if( span.empty() )
 		{
 			printWarning( u8"%s decoder requires a config blob.", cstr( decInit.codec ) );

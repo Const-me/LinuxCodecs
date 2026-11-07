@@ -27,6 +27,8 @@ const char* cstr( eAudioCodec codec ) noexcept
 	case eAudioCodec::WmaLossless: return "WMA Lossless";
 	case eAudioCodec::WmaPro: return "WMA Pro";
 
+	case eAudioCodec::Opus: return "Opus";
+
 	}
 	return "<error>";
 }

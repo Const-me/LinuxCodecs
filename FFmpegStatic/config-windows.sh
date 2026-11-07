@@ -2,9 +2,8 @@
 mkdir -p config/windows
 cd config/windows
 ../../FFmpeg/configure \
-  --toolchain=msvc --arch=x86_64 \
-  --disable-everything \
-  --enable-decoder=aac,ac3,dca,eac3,wmav1,wmav2,wmavoice,wmalossless,wmapro \
+  --toolchain=msvc --arch=x86_64 --disable-everything \
+  --enable-decoder=aac,ac3,dca,eac3,wmav1,wmav2,wmavoice,wmalossless,wmapro,opus \
   --disable-autodetect --disable-programs --disable-doc \
   --disable-avformat --disable-avfilter --disable-avdevice --disable-swscale \
   --disable-network --disable-debug --disable-stripping \

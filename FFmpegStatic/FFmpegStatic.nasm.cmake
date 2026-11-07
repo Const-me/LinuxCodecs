@@ -7,6 +7,7 @@ set( FFMPEGSTATIC_NASM
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/dcadsp.asm
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/fmtconvert.asm
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/lossless_audiodsp.asm
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/opusdsp.asm
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/sbrdsp.asm
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/synth_filter.asm
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavutil/x86/cpuid.asm
@@ -15,4 +16,7 @@ set( FFMPEGSTATIC_NASM
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavutil/x86/fixed_dsp.asm
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavutil/x86/float_dsp.asm
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavutil/x86/tx_float.asm
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/x86/audio_convert.asm
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/x86/rematrix.asm
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/x86/resample.asm
 )

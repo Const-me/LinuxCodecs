@@ -58,6 +58,16 @@ set( FFMPEGSTATIC_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/mpeg4audio.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/mpeg4audio_sample_rates.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/options.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/celt.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/dec.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/dec_celt.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/dsp.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/frame_duration_tab.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/parse.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/pvq.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/rc.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/silk.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/opus/tab.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/packet.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/parser.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/parsers.c
@@ -68,6 +78,7 @@ set( FFMPEGSTATIC_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/threadprogress.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/utils.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/vlc.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/vorbis_data.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/wma.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/wmadec.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/wmalosslessdec.c
@@ -82,6 +93,7 @@ set( FFMPEGSTATIC_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/dcadsp_init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/fmtconvert_init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/lossless_audiodsp_init.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/opusdsp_init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/sbrdsp_init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavcodec/x86/synth_filter_init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavutil/audio_fifo.c
@@ -122,6 +134,16 @@ set( FFMPEGSTATIC_SOURCES
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavutil/x86/fixed_dsp_init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavutil/x86/float_dsp_init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libavutil/x86/tx_float_init.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/audioconvert.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/dither.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/options.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/rematrix.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/resample.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/resample_dsp.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/swresample.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/x86/audio_convert_init.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/x86/rematrix_init.c
+	${CMAKE_CURRENT_SOURCE_DIR}/FFmpeg/libswresample/x86/resample_init.c
 	${CMAKE_CURRENT_SOURCE_DIR}/Patches/codec-get_buffer.c
 	${CMAKE_CURRENT_SOURCE_DIR}/Shims/encode.c
 	${CMAKE_CURRENT_SOURCE_DIR}/Shims/eval.c

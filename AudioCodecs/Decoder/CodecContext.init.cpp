@@ -22,6 +22,8 @@ namespace
 		case eAudioCodec::WmaVoice: return "wmavoice";
 		case eAudioCodec::WmaLossless: return "wmalossless";
 		case eAudioCodec::WmaPro: return "wmapro";
+
+		case eAudioCodec::Opus: return "opus";
 		}
 		return nullptr;
 	}
