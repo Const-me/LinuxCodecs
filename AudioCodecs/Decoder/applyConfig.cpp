@@ -121,6 +121,7 @@ HRESULT applyConfig( AVCodecContext* ctx, const sDecoderInit& decInit ) noexcept
 		return waveFormatConfig( ctx, span, decInit.codec );
 
 	default:
+		printError( u8"Unexpected audio codec %i", (int)decInit.codec );
 		return E_UNEXPECTED;
 	}
 }

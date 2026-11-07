@@ -1,32 +1,12 @@
 #include "stdafx.h"
 #include "CodecContext.h"
 #include "applyConfig.h"
+#include <Utils/loggerUtils.h>
 
 namespace
 {
 	constexpr uint16_t maxInitialSamples = 0x80;
-
 	using namespace AudioCodecs;
-
-	const char* decoderName( eAudioCodec ac ) noexcept
-	{
-		switch( ac )
-		{
-		case eAudioCodec::AAC: return "aac";
-		case eAudioCodec::DTS: return "dca";
-		case eAudioCodec::AC3: return "ac3";
-		case eAudioCodec::EAC3: return "eac3";
-
-		case eAudioCodec::Wma1: return "wmav1";
-		case eAudioCodec::Wma2: return "wmav2";
-		case eAudioCodec::WmaVoice: return "wmavoice";
-		case eAudioCodec::WmaLossless: return "wmalossless";
-		case eAudioCodec::WmaPro: return "wmapro";
-
-		case eAudioCodec::Opus: return "opus";
-		}
-		return nullptr;
-	}
 }
 
 HRESULT CodecContext::createContext( const sDecoderInit& decInit ) noexcept
